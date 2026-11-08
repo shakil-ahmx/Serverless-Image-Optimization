@@ -1,0 +1,61 @@
+# ---------- Terraform ----------
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.tfstate.lock.info
+*.tfvars
+*.tfvars.json
+!terraform.tfvars.example
+tfplan
+*.tfplan
+.terraformrc
+terraform.rc
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# ---------- Lambda build artifacts ----------
+*.zip
+_layer_build/
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# ---------- Secrets / credentials ----------
+.env
+.env.*
+.aws/
+*.pem
+*.key
+
+# ---------- IDE ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ---------- OS files ----------
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ---------- Logs ----------
+*.log
